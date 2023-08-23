@@ -53,6 +53,7 @@ pipeline {
             steps {
                 withCredentials([string(credentialsId:"github", variable: "GITHUB_TOKEN")]) {
                 sh '''
+                    git init
                     git config user.email '${EMAIL}'
                     git config user.name '${NAME}'
                     sed -i "s/todo:v[0-9]\\{1,\\}/todo:v${BUILD_NUMBER}/" deployment.yml
