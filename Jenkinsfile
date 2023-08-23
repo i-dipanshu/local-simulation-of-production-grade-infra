@@ -32,9 +32,9 @@ pipeline {
                     withDockerRegistry(credentialsId: 'docker-cred', url: 'https://index.docker.io/v1') {
                         sh "docker push ${DOCKER_IMAGE}"
                     }
+                }
             }
         }
-
         // Stage 3 : Update the Deployment File
         stage("Update the Deployment manifest") {
             environment{
