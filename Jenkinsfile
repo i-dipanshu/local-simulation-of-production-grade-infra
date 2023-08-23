@@ -46,13 +46,13 @@ pipeline {
                 NAME = "Dipanshu"
             }
             steps {
-                withCredential([string(credentialsId:"github", variable: "GITHUB_TOKEN")]) {
+                withCredentials([string(credentialsId:"github", variable: "GITHUB_TOKEN")]) {
                 sh '''
                     git config user.email '${EMAIL}'
                     git config user.name '${NAME}'
                     sed -i "s/todo:v[0-9]\\{1,\\}/todo:v${BUILD_NUMBER}/" deployment.yml
                     git add deployment.yml
-                    git commit -m "Update the deployment image to version&{BUILD_NUMBER}"
+                    git commit -m "Update the deployment image to version${BUILD_NUMBER}"
                     git push https://${GITHUB_TOKEN}@github.com/${GITHUB_USER_NAME}/${MANIFEST_GITHUB_REPO} HEAD:main
                 '''
                 }
