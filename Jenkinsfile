@@ -17,7 +17,7 @@ pipeline {
             steps {
                 sh 'echo Github and repository and credential is already configured during pipeline configuration'
                 // uncomment below line if we're using direct script in the pipeline rather a dockerfile from a repository
-                // git branch: 'main', url: 'https://github.com/i-dipanshu/python-django-todo-app.git'
+                git branch: 'main', url: 'https://github.com/i-dipanshu/python-django-todo-app.git'
             }
         }
 
@@ -36,16 +36,10 @@ pipeline {
             }
         }
 
-        stage("Checkout to manifest Repo"){
-            steps {
-                git credentialsId: "github", branch: 'main', url: 'https://github.com/i-dipanshu/django-k8s-argocd-manifests.git'
-            }
-        }     
-
         // Stage 3 : Update the Deployment File
         stage("Update the Deployment manifest") {
             environment {
-                MANIFEST_GITHUB_REPO = "django-k8s-argocd-manifests"
+                MANIFEST_GITHUB_REPO = "python-django-todo-app.git"
                 GITHUB_USER_NAME = "i-dipanshu"
                 EMAIL = "medipansh@gmail.com"
                 NAME = "Dipanshu"
@@ -53,12 +47,11 @@ pipeline {
             steps {
                 withCredentials([string(credentialsId:"github", variable: "GITHUB_TOKEN")]) {
                 sh '''
-                    git init
                     git config user.email '${EMAIL}'
                     git config user.name '${NAME}'
-                    sed -i "s/todo:v[0-9]\\{1,\\}/todo:v${BUILD_NUMBER}/" deployment.yml
-                    git add deployment.yml
-                    git commit -m "Update the deployment image to version${BUILD_NUMBER}"
+                    sed -i "s/todo:v[0-9]\\{1,\\}/todo:v${BUILD_NUMBER}/" ./k8s-argocd-manifests/deployment.yml
+                    git add .
+                    git commit -m "Updated the deployment image to version${BUILD_NUMBER}"
                     git push https://${GITHUB_TOKEN}@github.com/${GITHUB_USER_NAME}/${MANIFEST_GITHUB_REPO} HEAD:main
                 '''
                 }
