@@ -9,12 +9,7 @@ pipeline {
         }
     }
 
-    environment {
-        MANIFEST_GITHUB_REPO = "django-k8s-argocd-manifests"
-        GITHUB_USER_NAME = "i-dipanshu"
-        EMAIL = "medipansh@gmail.com"
-        NAME = "Dipanshu"
-    }    
+       
     // define all the stages of the pipeline
     stages {
         // Stage 1: configure the Github repository 
@@ -43,12 +38,18 @@ pipeline {
 
         stage("Checkout to manifest Repo"){
             steps {
-                git branch: 'main', url: 'https://github.com/${GITHUB_USER_NAME}/${MANIFEST_GITHUB_REPO}.git'
+                git branch: 'main', url: 'https://github.com/i-dipanshu/django-k8s-argocd-manifests.git'
             }
         }     
 
         // Stage 3 : Update the Deployment File
         stage("Update the Deployment manifest") {
+            environment {
+                MANIFEST_GITHUB_REPO = "django-k8s-argocd-manifests"
+                GITHUB_USER_NAME = "i-dipanshu"
+                EMAIL = "medipansh@gmail.com"
+                NAME = "Dipanshu"
+            } 
             steps {
                 withCredentials([string(credentialsId:"github", variable: "GITHUB_TOKEN")]) {
                 sh '''
