@@ -24,7 +24,7 @@ pipeline {
         stage("Build Docker Image and Push to DockerHub ") {
             environment {
                 DOCKER_IMAGE = "dipanshu13/django-todo:v${BUILD_NUMBER}"
-                REGISTRY_CREDENTIALS = credentials('docker-cred')
+                // REGISTRY_CREDENTIALS = credentials('docker-cred')
             }
             steps {
                 script {
