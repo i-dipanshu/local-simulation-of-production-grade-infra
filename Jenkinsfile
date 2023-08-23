@@ -16,8 +16,8 @@ pipeline {
             steps {
                 sh 'echo Github and repository and credential is already configured during pipeline configuration'
                 // uncomment below line if we're using direct script in the pipeline rather a dockerfile from a repository
-                git branch: 'main', url: 'https://github.com/i-dipanshu/python-django-todo-app.git'
-                sh "echo Passed"
+                // git branch: 'main', url: 'https://github.com/i-dipanshu/python-django-todo-app.git'
+                // sh "echo Passed"
             }
         }
 
