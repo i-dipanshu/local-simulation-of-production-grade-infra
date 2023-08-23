@@ -17,7 +17,6 @@ pipeline {
                 sh 'echo Github and repository and credential is already configured during pipeline configuration'
                 // uncomment below line if we're using direct script in the pipeline rather a dockerfile from a repository
                 // git branch: 'main', url: 'https://github.com/i-dipanshu/python-django-todo-app.git'
-                // sh "echo Passed"
             }
         }
 
@@ -25,14 +24,13 @@ pipeline {
         stage("Build Docker Image and Push to DockerHub ") {
             environment {
                 DOCKER_IMAGE = "dipanshu13/django-todo:v${BUILD_NUMBER}"
-                DOCKER_CRED_ID = "docker-cred"
-                REGISTRY_CREDENTIAL = credential('docker-cred')
+                REGISTRY_CREDENTIALS = credentials('docker-cred')
             }
             steps {
                 script {
-                    sh 'docker build -t ${DOCKER_IMAGE} .'
+                    sh "docker build -t ${DOCKER_IMAGE} ."
                     def dockerImage = docker.image("${DOCKER_IMAGE}")
-                    dokcer.withRegistry('https://index.docker.io/v1', "${DOCKER_CRED_ID}") {
+                    docker.withRegistry('https://index.docker.io/v1', "docker-cred") {
                         dockerImage.push()
                     }
                 }
