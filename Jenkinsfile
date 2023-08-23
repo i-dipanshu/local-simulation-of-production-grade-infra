@@ -21,20 +21,20 @@ pipeline {
             }
         }
 
-        // // Stage 2 : Build and Push Docker Image 
-        // stage("Build Docker Image and Push to DockerHub ") {
-        //     environment {
-        //         DOCKER_IMAGE = "dipanshu13/django-todo:v${BUILD_NUMBER}"
-        //         REGISTRY_CREDENTIALS = credentials('docker-cred')
-        //     }
-        //     steps {
-        //         script {
-        //             sh "docker build -t ${DOCKER_IMAGE} ."
-        //             sh 'echo $REGISTRY_CREDENTIALS_PSW | docker login -u $REGISTRY_CREDENTIALS_USR --password-stdin'
-        //             sh 'docker push ${DOCKER_IMAGE}'
-        //         }
-        //     }
-        // }
+        // Stage 2 : Build and Push Docker Image 
+        stage("Build Docker Image and Push to DockerHub ") {
+            environment {
+                DOCKER_IMAGE = "dipanshu13/django-todo:v${BUILD_NUMBER}"
+                REGISTRY_CREDENTIALS = credentials('docker-cred')
+            }
+            steps {
+                script {
+                    sh "docker build -t ${DOCKER_IMAGE} ."
+                    // sh 'echo $REGISTRY_CREDENTIALS_PSW | docker login -u $REGISTRY_CREDENTIALS_USR --password-stdin'
+                    // sh 'docker push ${DOCKER_IMAGE}'
+                }
+            }
+        }
 
         stage("Checkout to manifest Repo"){
             steps {
