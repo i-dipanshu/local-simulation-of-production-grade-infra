@@ -88,3 +88,5 @@ After pushing, We can log in to our Docker Hub account through the web interface
 Remember that Docker Hub repositories are public by default, so be cautious about pushing sensitive information. If We need private repositories, Docker Hub offers private repository options for paid accounts.
 
 Also, make sure that our Docker image is properly configured and secured before pushing it to a public repository.
+
+
