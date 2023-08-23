@@ -34,7 +34,7 @@ pipeline {
                 }
             }
         }
-    
+
         // Stage 3 : Update the Deployment File
         stage("Update the Deployment manifest") {
             environment{
@@ -42,6 +42,9 @@ pipeline {
                 GITHUB_USER_NAME = "i-dipanshu"
                 EMAIL = "medipansh@gmail.com"
                 NAME = "Dipanshu"
+            }
+            steps {
+                git branch: 'main', url: 'https://github.com/${GITHUB_USER_NAME}/${MANIFEST_GITHUB_REPO}.git'
             }
             steps {
                 withCredentials([string(credentialsId:"github", variable: "GITHUB_TOKEN")]) {
