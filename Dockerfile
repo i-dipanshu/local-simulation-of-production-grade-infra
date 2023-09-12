@@ -17,7 +17,7 @@ RUN python manage.py migrate
 
 # EXPOSE: Informs Docker that the container listens on port 8000. 
 # This doesn't actually publish the port, 
-# but serves as reference for developers who may want to expose it later.
+# but serves as reference for those who may want to expose it later.
 EXPOSE 8000
 
 
