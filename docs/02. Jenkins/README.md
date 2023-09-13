@@ -44,4 +44,11 @@ The newly created Docker image is then pushed to DockerHub, a container image re
 
 In our Kubernetes (K8s) deployment definition file, Jenkins updates the image option to reference the newly created Docker image with the version tag. This ensures that the latest version of our application is deployed in our Kubernetes cluster.
 
-By automating these steps, Jenkins streamlines our CI process, ensuring that changes in the source code are seamlessly built, packaged, and deployed with minimal manual intervention. This results in efficient and reliable software delivery.
+## Improvements 
+- We can configure slack notification whenever a test is passed or failed during our CI process. 
+- We can setup a stage for sonar server for code analysis.
+- We could also use build with parameter in Jenkins to improve reusability and management.
+
+## Conclusion 
+By automating these steps, Jenkins streamlines our CI process, ensuring that changes in the source code are seamlessly deployed with no manual intervention. This results in efficient and reliable software delivery.
+

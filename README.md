@@ -1,10 +1,13 @@
 // todo
 
-# Description
+# What is the Problem ?? 
 
+# How this project aims to solve the problem
+
+# Why this approach
+
+# A Brief Description 
 # Architecture 
-
-# Deliverables
 
 # Implementation
 
@@ -12,6 +15,9 @@
 
 # What I learned 
 
-# Upcoming modification and Upgrades
+# Improvements
 
-# Conclusion 
+# Creating this project by yourself
+
+# Contribution 
+
