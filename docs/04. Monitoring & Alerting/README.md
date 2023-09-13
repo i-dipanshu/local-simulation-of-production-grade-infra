@@ -2,7 +2,7 @@
 
 # What is Grafana 
 
-# Monitoring and Alerting 
+# Why do need monitoring and alerting 
 
 # What is Helm and Helm Charts 
 
