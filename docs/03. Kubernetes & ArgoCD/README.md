@@ -62,11 +62,11 @@ This section will walk you through the process of setting up and deploying appli
 
 **Step 1: Configure the Kubernetes Cluster**
 
-Before you begin deploying applications, you need to set up your Kubernetes cluster. Follow the instructions in the [Configuring Kubernetes Cluster](./01.%20Configuring-k8s-cluster.md) to get your cluster up and running.
+Before you begin deploying applications, you need to set up your Kubernetes cluster. Follow the instructions in the [Configuring Kubernetes Cluster](./01.%20Configure-k8s-cluster.md) to get your cluster up and running.
 
 **Step 2: Configure ArgoCD**
 
-Refer to the [Configuring ArgoCD](./02.%20Configuring-argocd.md) for detailed instructions on setting up ArgoCD.
+Refer to the [Configuring ArgoCD](./02.%20Configure-argocd.md) for detailed instructions on setting up ArgoCD.
 
 **Step 3: Deploy Your Application with ArgoCD**
 
