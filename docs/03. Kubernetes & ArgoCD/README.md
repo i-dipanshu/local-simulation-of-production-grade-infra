@@ -10,3 +10,7 @@
 - Understand more about [Operators](https://operatorhub.io/how-to-install-an-operator#What-happens-when-I-execute-the-'Install'-command-presented-in-the-pop-up?)
 
 # What ArgoCD does for Continuous Deployment ?
+
+# Implementation
+
+# Improvements
