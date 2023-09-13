@@ -17,7 +17,7 @@ pipeline {
             steps {
                 sh 'echo Github and repository and credential is already configured during pipeline configuration'
                 // uncomment below line if we're using direct script in the pipeline rather a dockerfile from a repository
-                git branch: 'main', url: 'https://github.com/i-dipanshu/python-django-todo-app.git'
+                // git branch: 'main', url: 'https://github.com/i-dipanshu/python-django-todo-app.git'
             }
         }
 
@@ -30,8 +30,8 @@ pipeline {
             steps {
                 script {
                     sh "docker build -t ${DOCKER_IMAGE} ."
-                    // sh 'echo $REGISTRY_CREDENTIALS_PSW | docker login -u $REGISTRY_CREDENTIALS_USR --password-stdin'
-                    // sh 'docker push ${DOCKER_IMAGE}'
+                    sh 'echo $REGISTRY_CREDENTIALS_PSW | docker login -u $REGISTRY_CREDENTIALS_USR --password-stdin'
+                    sh 'docker push ${DOCKER_IMAGE}'
                 }
             }
         }
