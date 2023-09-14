@@ -32,4 +32,4 @@ helm version
 
 This command should display Helm's version and other information if the installation was successful.
 
-That's it! Helm is now installed on your Minikube cluster.
+Helm is now installed on your Minikube cluster.
