@@ -49,6 +49,4 @@ In our Kubernetes (K8s) deployment definition file, Jenkins updates the image op
 - We can setup a stage for sonar server for code analysis.
 - We could also use build with parameter in Jenkins to improve reusability and management.
 
-## Conclusion 
-By automating these steps, Jenkins streamlines our CI process, ensuring that changes in the source code are seamlessly deployed with no manual intervention. This results in efficient and reliable software delivery.
 
