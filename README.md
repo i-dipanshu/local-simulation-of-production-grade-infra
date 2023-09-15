@@ -4,19 +4,19 @@ In DevOps and infrastructure management, understanding production-grade setups i
 
 **Note:** It's important to keep in mind that this project offers a high-level overview of a production-level infrastructure, providing foundational knowledge only. In reality, production infrastructures are often much more complex and larger.
 
-**The Purpose**
+## **The Purpose**
 
 The primary aim of this project is to provide an immersive learning experience, helping you gain valuable insights into the complexities of designing, creating and managing production-grade infrastructure. By actively engaging with this project, you'll develop a deep understanding of the essential prerequisites for deploying and maintaining enterprise-level infrastructure.
 
-**The Challenge**
+## **The Challenge**
 
 Imagine you have an application that needs to operate at an enterprise level, and you want to understand the complexities of such an environment. This project guides you through setting up a production-grade infrastructure on your local machine.
 
-**The Solution**
+## **The Solution**
 
 This project offers a step-by-step guide to explore and understand the complexities of production-grade infrastructure locally by doing. It takes an application and transforms it into a robust deployment within a Kubernetes environment, automates application updates using Jenkins and Argo CD, provides user-friendly monitoring dashboards with Prometheus and Grafana, and offers log management and analysis with the EFK stack.
 
-**Project Description**
+## **Project Description**
 
 This project lets you simulate a high-level production-grade infrastructure on your local. This includes:
 
