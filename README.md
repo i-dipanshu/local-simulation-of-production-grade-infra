@@ -14,7 +14,7 @@ The primary aim of this project is to provide an practical learning experience, 
 
 This project lets you simulate a high-level production-grade infrastructure on your local. This includes:
 
-1. **Deployment of a Django CRUD Application**
+1. **Docker Image for our Django CRUD Application**
 2. **Argo CD for Continuous Deployment**
 3. **Continuous Integration with Jenkins**
 4. **Monitoring with Prometheus and Grafana**
