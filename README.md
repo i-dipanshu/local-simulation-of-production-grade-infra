@@ -20,9 +20,25 @@ This project lets you simulate a high-level production-grade infrastructure on y
 4. **Monitoring with Prometheus and Grafana**
 5. **Managing and analyzing Logs using EFK Stack**
 
-## The Implementation
+## Project Alignment with Enterprise-Level Requirements
 
-For understanding what are these enterprise-level requirements, please refer to the [Project Documentation](./docs/README.md).
+| Enterprise-Level Requirement | Status | How We Achieve It |
+|-----------------------------|--------|--------------------|
+| Scalability                 |   ✔   | By providing insights into designing and managing infrastructure. |
+| Automation                  |   ✔    | Automation of deployment and updates using Argo CD and Jenkins. |
+| Monitoring                  |   ✔    | Robust monitoring capabilities through Prometheus and Grafana. |
+| Logging                     |   ✔    | Log management and analysis with the EFK stack. |
+| High Availability           |   ❌    | Not a primary focus in this local simulation, but could be easily achieved by scaling vertically and horizontally |
+| Security                    |   ❌    | Security measures are limited in this project due to local simulation. |
+| Load Balancing              |   ❌    | Load balancing is not a primary focus in this local setup. |
+| Disaster Recovery           |   ❌    | Disaster recovery aspects are not covered in this project. |
+| Compliance                  |   ❌    | Compliance requirements are not addressed in this simulation. |
+| Cost Optimization           |   ❌    | Cost optimization strategies are not explored in this local setup. |
+
+
+**Please note** that while our project addresses several enterprise-level requirements, it primarily serves as a learning and simulation tool and doesn't not cover all aspects of a production-grade enterprise environment.
+
+## The Implementation
 
 ### Architecture Diagram
 <!-- todo -->
@@ -30,7 +46,7 @@ For understanding what are these enterprise-level requirements, please refer to 
 ### The Flow of Docs
 Each stage has two types of documentation. One provides information about the tools or technologies, explaining why they are needed, and the other is a guide to implement them.
 
-Note: Due to limited computing resources, we'll use a scaled-down version of all the components. Sometimes we may need to ignore some security measures. However, look for heading appended with <Production> to learn what would change in a real production environment.
+**Note:** Due to limited computing resources, we'll use a scaled-down version of all the components. Sometimes we may need to ignore some security measures. However, look for heading appended with `Production` to learn what would change in a real production environment.
 
 ### The Flow of the Project
 
@@ -45,6 +61,9 @@ This  project is divided into 5 stages. We'll delve into one stage at a time.
 | Stage 3      | Setup continuous integration using Jenkins        | Jenkins Server                 | [01. Understand Continuous Integration Stage](./docs/03.%20Jenkins/README.md) <br> [02. Setup Continuous Integration Pipeline](./docs/03.%20Jenkins/jenkins-setup-for-ci.md)                                                                                                                                                                                                                                            |
 | Stage 4      | Setup monitoring using Prometheus and Grafana     | Prometheus, Grafana            | [01. Understand Monitoring Stage](./docs/04.%20Monitoring%20&%20Alerting/README.md) <br> [02. Configure Prometheus and Grafana on K8s cluster](./docs/04.%20Monitoring%20&%20Alerting/01.%20Install-Prometheus-Grafana.md) <br> [03. Setup Grafana Dashboard](./docs/04.%20Monitoring%20&%20Alerting/02-Setup-Grafana-Dashboards.md) <br> [04. Setup Alerts](./docs/04.%20Monitoring%20&%20Alerting/03-Setup-Alerts.md) |
 | Stage 5      | Setup log management and analysis using EFK Stack | Elasticsearch, Fluentd, Kibana | [01. Understand Log management and analysis stage](./docs/05.%20EFK/README.md) <br> [02. Configure EFK stack on K8s cluster](./docs/05.%20EFK/01-Setup-EFK-Stack.md) <br> [03. Explore and understand Kibana UI](./docs/05.%20EFK/02-Explore-Kibana-UI.md)                                                                                                                                                              |
+
+
+
 
 ## Contributions
 Explore the documentation for the a section with heading `Improvements`. These are areas where contributions can be made to enhance the project. You can add detailed step-by-step guides for implementation. If you have suggestions or find issues, feel free to add them and create a pull request.
