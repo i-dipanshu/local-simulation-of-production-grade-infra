@@ -24,7 +24,5 @@ Before continuing to next stages, you'll need to build specific Docker images. F
 1. [Create a Docker Image for the Django App](./01-Docker-Image-Django-App.md)
 2. [Build a Docker Image for the Jenkins Agent](./02-Docker-Image-For-Jenkins-Agent.md)
 
-That's it! You're now ready to leverage the power of Docker for your DevOps projects.
-
 [Previous](../00.%20Prerequisite/Understand-Our-Django-Application.md) | [Next](./01-Docker-Image-Django-App.md)
 
