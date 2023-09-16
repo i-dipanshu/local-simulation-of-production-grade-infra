@@ -23,22 +23,22 @@ Follow these steps to create a Docker image suitable for our application as a Je
 
 1. **Create a Dockerfile**: Start by creating a `Dockerfile` with the following content:
 
-```Dockerfile
-# Use the latest official Ubuntu image as the base
-FROM ubuntu:latest
+    ```Dockerfile
+    # Use the latest official Ubuntu image as the base
+    FROM ubuntu:latest
 
-# Update the package list and install Python
-RUN apt-get update -y && apt-get install -y python3
+    # Update the package list and install Python
+    RUN apt-get update -y && apt-get install -y python3
 
-# Install Docker
-RUN apt-get update -y && apt-get install -y docker.io
+    # Install Docker
+    RUN apt-get update -y && apt-get install -y docker.io
 
-# Clean up the package cache to reduce image size
-RUN apt-get clean
+    # Clean up the package cache to reduce image size
+    RUN apt-get clean
 
-# Set the default command to be a shell
-CMD ["/bin/bash"]
-```
+    # Set the default command to be a shell
+    CMD ["/bin/bash"]
+    ```
 
 2. **Build the Docker Image**: Navigate to the directory containing your Dockerfile and execute this command to build the Docker image:
 
