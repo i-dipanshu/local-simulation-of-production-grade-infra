@@ -36,6 +36,6 @@ To get started ensure that your instance meets the following minimum requirement
    ```
    
 
-That's it! You have successfully installed Docker on your Ubuntu instance. You can now proceed with setting up the rest of your environment using the concepts mentioned above.
+That's it! You have successfully installed Docker on your Ubuntu instance. You can now proceed with setting up the rest of your environment.
 
 [Next](./Understand-Our-Django-Application.md)

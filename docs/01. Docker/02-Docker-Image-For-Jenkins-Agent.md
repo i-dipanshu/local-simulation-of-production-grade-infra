@@ -57,4 +57,18 @@ docker push <image-name>:<version-tag>
 
 **Usage**: You can now employ this Docker image as a Jenkins agent for running the build process. It includes Python and Docker, vital for building Django applications.
 
+## Improvements
+### Optimizing Container Images with Distroless Images
+
+Efficient resource utilization in Kubernetes relies on minimizing the size of your container images. A powerful approach to achieve this is by embracing distroless images. This documentation provides clear guidance on reducing image sizes effectively using distroless images.
+
+#### What are Distroless Images?
+
+Distroless images are ultra-lightweight container images that exclusively comprise the essential components required for your application to run. They intentionally exclude superfluous packages and the complete operating system distribution. By adopting distroless images, you can substantially shrink the attack surface and, consequently, your overall image size.
+
+#### Benefits of Using Distroless Images
+1. **Reduced Attack Surface**
+2. **Smaller Image Size**
+3. **Faster Deployment**
+
 [Previous](./01-Docker-Image-Django-App.md) | [Next](../02.%20Kubernetes%20&%20ArgoCD/README.md)

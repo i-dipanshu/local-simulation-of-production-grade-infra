@@ -4,7 +4,7 @@ Django is a versatile web framework that simplifies web application development.
 
 ## About Our Application
 
-Our app is a basic to-do list built with Django, which efficiently stores tasks in a PostgreSQL database.
+Our app is a basic to-do app built with Django, which stores tasks in a PostgreSQL database.
 
 ## User Interface
 
