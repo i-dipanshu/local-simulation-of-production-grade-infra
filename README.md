@@ -1,8 +1,8 @@
 # Simulating a Production-Grade Infrastructure Locally
 
-Ever wondered how Google manages an infrastructure capable of handling 8.5 billion searches per day ? 
+Have you ever been curious about how Google handles an infrastructure that can handle a staggering 8.5 billion searches daily ?
 
-This project provides newcomers with a hands-on experience in creating, designing, and managing a production-grade infrastructure, all within the confines of their own computer. It transforms a simple application into a robust deployment within a Kubernetes environment, automates application updates using Jenkins and Argo CD, offers user-friendly monitoring dashboards with Prometheus and Grafana, and provides log management and analysis with the EFK stack.
+This project aims to help you understand the foundation of such environment by guiding you through the process of creating, designing, and managing a production-ready infrastructure right on your own computer. It transforms a simple application into a robust deployment within a Kubernetes environment, automates application updates using Jenkins and Argo CD, offers user-friendly monitoring dashboards with Prometheus and Grafana, and provides log management and analysis with the EFK stack.
 
 **Note:** It's important to keep in mind that this project offers a high-level overview of a production-level infrastructure, providing foundational knowledge only. In reality, production infrastructures are often much more complex and larger.
 
