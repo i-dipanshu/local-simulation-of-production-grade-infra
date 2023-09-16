@@ -62,9 +62,6 @@ This  project is divided into 5 stages. We'll delve into one stage at a time.
 | Stage 4      | Setup monitoring using Prometheus and Grafana     | Prometheus, Grafana            | [01. Understand Monitoring Stage](./docs/04.%20Monitoring%20&%20Alerting/README.md) <br> [02. Configure Prometheus and Grafana on K8s cluster](./docs/04.%20Monitoring%20&%20Alerting/01.%20Install-Prometheus-Grafana.md) <br> [03. Setup Grafana Dashboard](./docs/04.%20Monitoring%20&%20Alerting/02-Setup-Grafana-Dashboards.md) <br> [04. Setup Alerts](./docs/04.%20Monitoring%20&%20Alerting/03-Setup-Alerts.md) |
 | Stage 5      | Setup log management and analysis using EFK Stack | Elasticsearch, Fluentd, Kibana | [01. Understand Log management and analysis stage](./docs/05.%20EFK/README.md) <br> [02. Configure EFK stack on K8s cluster](./docs/05.%20EFK/01-Setup-EFK-Stack.md) <br> [03. Explore and understand Kibana UI](./docs/05.%20EFK/02-Explore-Kibana-UI.md)                                                                                                                                                              |
 
-
-
-
 ## Contributions
 Explore the documentation for the a section with heading `Improvements`. These are areas where contributions can be made to enhance the project. You can add detailed step-by-step guides for implementation. If you have suggestions or find issues, feel free to add them and create a pull request.
 
