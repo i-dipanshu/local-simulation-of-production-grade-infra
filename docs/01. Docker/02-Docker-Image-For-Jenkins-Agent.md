@@ -49,7 +49,7 @@ docker build -t <image-name>:<version-tag> .
 ```
 
 3. **Push the image to DockerHub**
-Login into your DockerHub account using `docker login` command. If you don't create one by following this [link](https://hub.docker.com/).
+Login into your DockerHub account using `docker login` command. If you don't have a DockerHub account, create one by following this [link](https://hub.docker.com/).
 
 ```sh
 docker push <image-name>:<version-tag>
