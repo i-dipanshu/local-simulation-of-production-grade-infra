@@ -19,6 +19,9 @@ To get started ensure that your instance meets the following minimum requirement
 - Minimum Memory: 8GB
 - Minimum CPU: 4
 
+## Creating a DockerHub account 
+To create a DockerHub account, simply click on this [link](https://hub.docker.com/) 
+
 ## Installing Docker
 
 1. Open a terminal on your Ubuntu instance.
