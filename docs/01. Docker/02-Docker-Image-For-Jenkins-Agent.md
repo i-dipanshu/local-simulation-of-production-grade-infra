@@ -17,7 +17,7 @@ Using Docker as a Jenkins agent offers several benefits:
 - **Efficient Resource Usage:** Docker runs build processes in containers that exist only during the build, conserving resources.
 - **Meets Production Standards:** This approach aligns with production-grade requirements.
 
-## Steps to Build the Docker Image
+## Build the Docker Image
 
 Follow these steps to create a Docker image suitable for use as a Jenkins agent:
 
@@ -45,15 +45,37 @@ This Dockerfile outlines the necessary steps for building the image.
 2. **Build the Docker Image**: Navigate to the directory containing your Dockerfile and execute this command to build the Docker image:
 
 ```bash
-docker build -t <image-name>:<version-tag> .
+docker build -t <image-name>:<tag> .
 ```
 
-3. **Push the image to DockerHub**
-Login into your DockerHub account using `docker login` command. If you don't have a DockerHub account, create one by following this [link](https://hub.docker.com/).
+
+## Push the image to DockerHub
+
+1. **Tag the Image:**
+Before pushing the image, We need to tag it with our Docker Hub username/repo. Replace `username` with our Docker Hub username and `image-name` with the name We want for our repository on Docker Hub.
 
 ```sh
-docker push <image-name>:<version-tag>
+docker tag local-image:tag username/image-name:tag
 ```
+
+2. **Login to Docker Hub:**
+Before We can push an image to Docker Hub, We need to log in using the `docker login` command.
+
+```sh
+docker login
+```
+
+We'll be prompted to enter our Docker Hub username and password.
+
+3. **Push the Image:**
+Once We're logged in, We can push the tagged image to Docker Hub.
+
+```sh
+docker push username/image-name:tag
+```
+
+4. **Check on Docker Hub:**
+After pushing, We can log in to our Docker Hub account through the web interface to see the pushed image in our repository.
 
 **Usage**: You can now employ this Docker image as a Jenkins agent for running the build process. It includes Python and Docker, vital for building Django applications.
 
