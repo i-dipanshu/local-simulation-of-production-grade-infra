@@ -48,7 +48,7 @@ docker run -dp 8000:8000 dipanshu13/django-todo:v1
 ```
 Now the application is accessible at `http://localhost:8000`
 
-3. Optionally, We may create our image for this application and use it to spin application. It uses the Dockerfile present in the root of the repository. [Refer](./Dockerfile) to understand each layer.
+3. Optionally, We may create our image for this application and use it to spin application. It uses the Dockerfile present in the root of the repository. [Refer](../../Dockerfile) to understand each layer.
 ```sh
 docker build -t <image-name>:<tag> .
 ```
