@@ -43,7 +43,7 @@ This project lets you simulate a high-level production-grade infrastructure on y
 ## The Implementation
 
 ### Architecture Diagram
-![Architecture Diagram](./docs/images/local-simulation-of-prod-infra.drawio.svg)
+![Architecture Diagram](./docs/images/local-simulation-of-prod-infra.drawio.png)
 
 ### The Flow of Docs
 In each stage, there are two types of documentation. The primary documentation is called `README`, located at the root of each stage. It provides information about the tools or technologies used in that stage, explaining their significance and purpose. Additionally, there are guides available to help you implement each stage.
