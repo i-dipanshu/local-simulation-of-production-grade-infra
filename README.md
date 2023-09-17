@@ -4,6 +4,8 @@ Have you ever been curious about how Google handles an infrastructure that can h
 
 This project aims to help you understand the foundation of such environment by guiding you through the process of creating, designing, and managing a production-ready infrastructure right on your own computer. It transforms a simple application into a robust deployment within a Kubernetes environment, automates application updates using Jenkins and Argo CD, offers user-friendly monitoring dashboards with Prometheus and Grafana, and provides log management and analysis with the EFK stack.
 
+[QuickStart](./README.md#the-implementation)
+
 **Note:** It's important to keep in mind that this project offers a high-level overview of a production-level infrastructure, providing foundational knowledge only. In reality, production infrastructures are often much more complex and larger.
 
 ## **Purpose**
@@ -22,18 +24,18 @@ This project lets you simulate a high-level production-grade infrastructure on y
 
 ## Project Alignment with Enterprise-Level Requirements
 
-| Enterprise-Level Requirement | Status | How We Achieve It |
-|-----------------------------|--------|--------------------|
-| Scalability                 |   ✔   | By providing insights into designing and managing infrastructure. |
-| Automation                  |   ✔    | Automation of deployment and updates using Argo CD and Jenkins. |
-| Monitoring                  |   ✔    | Robust monitoring capabilities through Prometheus and Grafana. |
-| Logging                     |   ✔    | Log management and analysis with the EFK stack. |
-| High Availability           |   ❌    | Not a primary focus in this local simulation, but could be easily achieved by scaling vertically and horizontally |
-| Security                    |   ❌    | Security measures are limited in this project due to local simulation. |
-| Load Balancing              |   ❌    | Load balancing is not a primary focus in this local setup. |
-| Disaster Recovery           |   ❌    | Disaster recovery aspects are not covered in this project. |
-| Compliance                  |   ❌    | Compliance requirements are not addressed in this simulation. |
-| Cost Optimization           |   ❌    | Cost optimization strategies are not explored in this local setup. |
+| Enterprise-Level Requirement | Status | How We Achieve It                                                                                                 |
+| ---------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------- |
+| Scalability                  | ✔      | By providing insights into designing and managing infrastructure.                                                 |
+| Automation                   | ✔      | Automation of deployment and updates using Argo CD and Jenkins.                                                   |
+| Monitoring                   | ✔      | Robust monitoring capabilities through Prometheus and Grafana.                                                    |
+| Logging                      | ✔      | Log management and analysis with the EFK stack.                                                                   |
+| High Availability            | ❌      | Not a primary focus in this local simulation, but could be easily achieved by scaling vertically and horizontally |
+| Security                     | ❌      | Security measures are limited in this project due to local simulation.                                            |
+| Load Balancing               | ❌      | Load balancing is not a primary focus in this local setup.                                                        |
+| Disaster Recovery            | ❌      | Disaster recovery aspects are not covered in this project.                                                        |
+| Compliance                   | ❌      | Compliance requirements are not addressed in this simulation.                                                     |
+| Cost Optimization            | ❌      | Cost optimization strategies are not explored in this local setup.                                                |
 
 
 **Please note** that while our project addresses several enterprise-level requirements, it primarily serves as a learning and simulation tool and doesn't not cover all aspects of a production-grade enterprise environment.
@@ -44,9 +46,11 @@ This project lets you simulate a high-level production-grade infrastructure on y
 <!-- todo -->
 
 ### The Flow of Docs
-Each stage has two types of documentation. One provides information about the tools or technologies, explaining why they are needed, and the other is a guide to implement them.
+In each stage, there are two types of documentation. The primary documentation is called `README`, located at the root of each stage. It provides information about the tools or technologies used in that stage, explaining their significance and purpose. Additionally, there are guides available to help you implement each stage.
 
-**Note:** Due to limited computing resources, we'll use a scaled-down version of all the components. Sometimes we may need to ignore some security measures. However, look for heading appended with `Production` to learn what would change in a real production environment.
+To make navigation easier, each step includes both `Previous` and `Next` buttons. This means you can seamlessly move between steps or stages without having to return to this section repeatedly.
+
+**Note:** Please be aware that, due to limited computing resources, we will be working with scaled-down versions of all components. In some cases, we may need to temporarily disregard certain security measures. However, for details on what changes in a real production environment, refer to sections marked with the heading `Production`.
 
 ### The Flow of the Project
 
