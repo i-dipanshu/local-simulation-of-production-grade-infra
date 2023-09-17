@@ -41,4 +41,6 @@ To create a DockerHub account, simply click on this [link](https://hub.docker.co
 
 That's it! You have successfully installed Docker on your Ubuntu instance. You can now proceed with setting up the rest of your environment.
 
+---
+
 [Next](./Understand-Our-Django-Application.md)

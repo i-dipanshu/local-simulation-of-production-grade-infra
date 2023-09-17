@@ -91,4 +91,6 @@ Distroless images are ultra-lightweight container images that exclusively compri
 2. **Smaller Image Size**
 3. **Faster Deployment**
 
+---
+
 [Previous](./01-Docker-Image-Django-App.md) | [Next](../02.%20Kubernetes%20&%20ArgoCD/README.md)

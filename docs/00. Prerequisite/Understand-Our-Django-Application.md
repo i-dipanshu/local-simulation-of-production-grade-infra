@@ -26,4 +26,6 @@ docker run -dp 8000:8000 dipanshu13/django-todo:v1
 
 Now, you can access the application at `http://localhost:8000`.
 
+---
+
 [Previous](./README.md) | [Next](../01.%20Docker/README.md)

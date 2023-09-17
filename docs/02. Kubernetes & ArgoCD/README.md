@@ -72,4 +72,6 @@ Refer to the [Configuring ArgoCD](./02.%20Configure-argocd.md) for detailed inst
 
 Now that your cluster and ArgoCD are configured, it's time to deploy your application. Follow the steps outlined in the [Deploying Applications using ArgoCD](./03.%20Deploy-app-using-argocd.md) to deploy your app effortlessly.
 
+---
+
 [Previous](../01.%20Docker/02-Docker-Image-For-Jenkins-Agent.md) | [Next](./01.%20Configure-k8s-cluster.md)

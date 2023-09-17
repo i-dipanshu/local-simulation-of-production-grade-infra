@@ -89,4 +89,6 @@ Remember that Docker Hub repositories are public by default, so be cautious abou
 
 Also, make sure that our Docker image is properly configured and secured before pushing it to a public repository.
 
+---
+
 [Previous](./README.md) | [Next](./02-Docker-Image-For-Jenkins-Agent.md)

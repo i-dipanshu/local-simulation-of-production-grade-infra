@@ -43,4 +43,6 @@ Monitoring without alerts is incomplete. In this step, you will learn how to con
 
 By following these steps, you'll have a robust Kubernetes monitoring and alerting system in place, ensuring the reliability and performance of your applications running in Kubernetes.
 
+---
+
 [Previous](../02.%20Kubernetes%20&%20ArgoCD/README.md) | [Next](./01.%20Install-Prometheus-Grafana.md)
