@@ -33,3 +33,5 @@ Follow the detailed instructions in the [01-Setup-EFK-Stack](./01-Setup-EFK-Stac
 **Step 2: Explore the Kibana UI**
 
 After successfully setting up the EFK Stack, you can explore the Kibana user interface by following the steps outlined in [02-Explore-Kibana-UI.md](./02-Explore-Kibana-UI.md). This guide will help you get started with visualizing and analyzing your log data using Kibana.
+
+[Previous](../04.%20Monitoring%20&%20Alerting/03-Setup-Alerts.md) | [Next](./01-Setup-EFK-Stack.md)

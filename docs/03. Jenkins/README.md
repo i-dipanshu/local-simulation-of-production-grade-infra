@@ -49,4 +49,5 @@ In our Kubernetes (K8s) deployment definition file, Jenkins updates the image op
 - We can setup a stage for sonar server for code analysis.
 - We could also use build with parameter in Jenkins to improve reusability and management.
 
+[Previous](../02.%20Kubernetes%20&%20ArgoCD/03.%20Deploy-app-using-argocd.md) | [Next](./jenkins-setup-for-ci.md)
 

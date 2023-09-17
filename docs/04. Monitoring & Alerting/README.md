@@ -42,3 +42,5 @@ Once Prometheus and Grafana are up and running, it's time to set up customized d
 Monitoring without alerts is incomplete. In this step, you will learn how to configure alerts in Prometheus to proactively detect and respond to issues in your Kubernetes cluster. Follow the guide in the [03. Setup-Alerts.md](./03-Setup-Alerts.md) file.
 
 By following these steps, you'll have a robust Kubernetes monitoring and alerting system in place, ensuring the reliability and performance of your applications running in Kubernetes.
+
+[Previous](../02.%20Kubernetes%20&%20ArgoCD/README.md) | [Next](./01.%20Install-Prometheus-Grafana.md)

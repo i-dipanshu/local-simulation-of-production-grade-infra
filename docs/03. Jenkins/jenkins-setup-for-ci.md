@@ -186,3 +186,5 @@ stage("Update the Deployment manifest") {
 // Setup github webhook to trigger pipeline
 
 We can create a new job using this pipeline script in Jenkins server and github will trigger it whenever a change is made. 
+
+[Previous](./README.md) | [Next](../04.%20Monitoring%20&%20Alerting/README.md)
