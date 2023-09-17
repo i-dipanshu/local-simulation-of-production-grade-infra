@@ -4,7 +4,7 @@ Have you ever been curious about how Google handles an infrastructure that can h
 
 This project aims to help you understand the foundation of such environment by guiding you through the process of creating, designing, and managing a production-ready infrastructure right on your own computer. It transforms a simple application into a robust deployment within a Kubernetes environment, automates application updates using Jenkins and Argo CD, offers user-friendly monitoring dashboards with Prometheus and Grafana, and provides log management and analysis with the EFK stack.
 
-[QuickStart](./README.md#the-implementation)
+[QuickStart](#the-implementation)
 
 **Note:** It's important to keep in mind that this project offers a high-level overview of a production-level infrastructure, providing foundational knowledge only. In reality, production infrastructures are often much more complex and larger.
 
